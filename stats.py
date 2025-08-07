@@ -40,21 +40,21 @@ def letter_dict(characters):
 def sorted_dict(dict):
     return dict["num"]
 
-def main():
-    word_count = get_book_wc("books/frankenstein.txt")
-    characters = character_count("books/frankenstein.txt")
-    character_dict = letter_dict(characters)
-    character_dict.sort(reverse=True, key=sorted_dict)
-    print("============ BOOKBOT ============")
-    print(f"Analyzing book found at books/frankenstein.txt...")
-    print("----------- Word Count ----------")
-    print(f"Found {word_count} total words")
-    print("--------- Character Count -------")
-    for dict in character_dict:
-            if dict["char"].isalpha():
-                print(f"{dict["char"]}: {dict["num"]}")
-    print("============= END ===============")
+# def main():
+#     word_count = get_book_wc()
+#     characters = character_count()
+#     character_dict = letter_dict(characters)
+#     character_dict.sort(reverse=True, key=sorted_dict)
+#     print("============ BOOKBOT ============")
+#     print(f"Analyzing book found at ...")
+#     print("----------- Word Count ----------")
+#     print(f"Found {word_count} total words")
+#     print("--------- Character Count -------")
+#     for dict in character_dict:
+#             if dict["char"].isalpha():
+#                 print(f"{dict["char"]}: {dict["num"]}")
+#     print("============= END ===============")
 
 
 
-main()
+# main()
